@@ -16,4 +16,26 @@ cookbookApp.controller('CookbookCtrl', function ($scope, $http) {
         delete $scope.name;
       });
   }
+  $scope.formatAmount = function(amount) {
+    if (typeof(amount) === 'number') {
+      // see if it converts to a fraction
+      if (amount === Math.floor(amount)) {
+        return amount;
+      } else if (amount * 2 === Math.floor(amount * 2)) {
+        return amount * 2 + "/2";
+      } else if (amount * 3 === Math.floor(amount * 3)) {
+        return amount * 3 + "/3";
+      } else if (amount * 4 === Math.floor(amount * 4)) {
+        return amount * 4 + "/4";
+      } else if (amount * 6 === Math.floor(amount * 6)) {
+        return amount * 6 + "/6";
+      } else if (amount * 8 === Math.floor(amount * 8)) {
+        return amount * 8 + "/8";
+      } else {
+        return amount;
+      }
+    } else {
+      return amount;
+    }
+  };
 });
