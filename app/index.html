@@ -1,15 +1,19 @@
 <!doctype html>
-<html>
+<html ng-app="cookbookApp">
 <head>
   <title>Cookbook</title>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="js/cookbook.js"></script>
 </head>
-<body ng-app>
+<body ng-controller="CookbookCtrl">
   <h1>Cookbook</h1>
   <div class="recipe-list">
     <a href="#">Shrimp Burgers</a>
   </div>
   <div class="recipe-view" ng-if="recipe">
+    <ul>
+      <li ng-repeat="ingredient in recipe.ingredients">{{ingredient.amount}} {{ingredient.units}} {{ingredient.name}}</li>
+    </ul>
     {{recipe.instructions}}
   </div>
 </body>
