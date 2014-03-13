@@ -14,3 +14,11 @@ h1 {
   background: lightgreen;
   padding: 10px;
 }
+
+.recipe-photo {
+  float: left;
+}
+
+.recipe-photo img {
+  height: 300px;
+}

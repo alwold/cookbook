@@ -23,5 +23,8 @@
     <h3>Instructions</h3>
     <span ng-bind-html="recipe.instructions"></span>
   </div>
+  <div class="recipe-photo" ng-if="recipe.photo">
+    <img ng-src="data/images/{{recipe.photo}}"/>
+  </div>
 </body>
 </html>
