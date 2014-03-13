@@ -15,9 +15,11 @@
   </div>
   <div class="recipe-view" ng-if="recipe">
     <h2>{{name}}</h2>
+    <h3>Ingredients</h3>
     <ul>
       <li ng-repeat="ingredient in recipe.ingredients">{{formatAmount(ingredient.amount)}} {{ingredient.units}} {{ingredient.name}}</li>
     </ul>
+    <h3>Instructions</h3>
     <span ng-bind-html="recipe.instructions"></span>
   </div>
 </body>
