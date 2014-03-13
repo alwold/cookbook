@@ -18,7 +18,34 @@
     {
       "amount": 2,
       "name": "scallions"
+    },
+    {
+      "amount": 2,
+      "units": "tbsp",
+      "name": "minced fresh parsley"
+    },
+    {
+      "amount": 1,
+      "units": "tsp",
+      "name": "grated lemon zest"
+    },
+    {
+      "amount": 0.125,
+      "units": "tsp",
+      "name": "pepper"
+    },
+    {
+      "amount": "pinch",
+      "name": "cayenne pepper"
+    },
+    {
+      "amount": 2,
+      "units": "tsp",
+      "name": "canola oil"
+    },
+    {
+      "name": "lemon wedges"
     }
   ],
-  "instructions": "Mix errryything and cook it up"
+  "instructions": "Pulse shrimp about 7 pulses, so there are some coarse pieces left. Whisk mayo, scallions, parsley, lemon zest, salt, pepper and cayenne together. Fold in shrimp and breadcrumbs. Divide into 4 patties and refrigerate 30 minutes. Heat oil to medium high, and cook patties for 8-10 minutes until browned. Serve with lemon wedges."
 }
