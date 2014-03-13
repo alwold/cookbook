@@ -3,6 +3,7 @@
 <head>
   <title>Cookbook</title>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
   <script src="js/cookbook.js"></script>
 </head>
 <body ng-controller="CookbookCtrl">
@@ -17,7 +18,7 @@
     <ul>
       <li ng-repeat="ingredient in recipe.ingredients">{{formatAmount(ingredient.amount)}} {{ingredient.units}} {{ingredient.name}}</li>
     </ul>
-    {{recipe.instructions}}
+    <span ng-bind-html="recipe.instructions"></span>
   </div>
 </body>
 </html>
