@@ -21,6 +21,8 @@ cookbookApp.controller('CookbookCtrl', function ($scope, $http) {
       // see if it converts to a fraction
       if (amount === Math.floor(amount)) {
         return amount;
+      } else if (amount * 2 === Math.floor(amount * 2)) {
+        return amount * 2 + '/2';
       } else if (String(amount).indexOf('0.333') === 0) {
         return '1/3';
       } else if (String(amount).indexOf('0.66') === 0) {
