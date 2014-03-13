@@ -8,7 +8,9 @@
 <body ng-controller="CookbookCtrl">
   <h1>Cookbook</h1>
   <div class="recipe-list">
-    <a href="#">Shrimp Burgers</a>
+    <ul>
+      <li ng-repeat="recipe in recipes"><a href="#" ng-click="view(recipe)">{{recipe}}</a></li>
+    </ul>
   </div>
   <div class="recipe-view" ng-if="recipe">
     <ul>
