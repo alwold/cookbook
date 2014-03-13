@@ -62,5 +62,9 @@
   {
     "name": "Guacamole",
     "file": "guacamole"
+  },
+  {
+    "name": "Steel Cut Oats",
+    "file": "steel-cut-oats"
   }
 ]
