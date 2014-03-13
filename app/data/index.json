@@ -1,1 +1,10 @@
-["shrimp-burgers", "tabbouleh"]
+[
+  {
+    "name": "Shrimp Burgers",
+    "file": "shrimp-burgers"
+  },
+  {
+    "name": "Tabbouleh",
+    "file": "tabbouleh"
+  }
+]

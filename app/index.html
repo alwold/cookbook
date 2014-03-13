@@ -9,10 +9,11 @@
   <h1>Cookbook</h1>
   <div class="recipe-list">
     <ul>
-      <li ng-repeat="recipe in recipes"><a href="#" ng-click="view(recipe)">{{recipe}}</a></li>
+      <li ng-repeat="recipe in recipes"><a href="#" ng-click="view(recipe.file, recipe.name)">{{recipe.name}}</a></li>
     </ul>
   </div>
   <div class="recipe-view" ng-if="recipe">
+    <h2>{{name}}</h2>
     <ul>
       <li ng-repeat="ingredient in recipe.ingredients">{{ingredient.amount}} {{ingredient.units}} {{ingredient.name}}</li>
     </ul>
