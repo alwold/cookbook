@@ -36,7 +36,8 @@
     },
     {
       "amount": 0.75,
-      "name": "lb"
+      "units": "lb",
+      "name": "zucchini, diced"
     },
     {
       "amount": 1,
