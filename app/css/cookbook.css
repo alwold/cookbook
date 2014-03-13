@@ -9,6 +9,7 @@
 .recipe-view {
   float: left;
   padding: 10px;
+  max-width: 75%;
 }
 
 h1 {
