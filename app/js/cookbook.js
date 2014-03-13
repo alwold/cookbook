@@ -1,4 +1,4 @@
-var cookbookApp = angular.module('cookbookApp', []);
+var cookbookApp = angular.module('cookbookApp', ['ngSanitize']);
 
 cookbookApp.controller('CookbookCtrl', function ($scope, $http) {
   $http.get('data/index.json').success(function(data) {
