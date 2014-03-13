@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>Cookbook</title>
+  <script src="bower_components/angular/angular.js"></script>
+</head>
+<body ng-app>
+  <h1>Cookbook</h1>
+  <div class="recipe-list">
+    <a href="#">Shrimp Burgers</a>
+  </div>
+  <div class="recipe-view" ng-if="recipe">
+    {{recipe.instructions}}
+  </div>
+</body>
+</html>
