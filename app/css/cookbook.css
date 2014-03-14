@@ -18,9 +18,6 @@ h1 {
 }
 
 .recipe-photo {
-  float: left;
-}
-
-.recipe-photo img {
   height: 300px;
+  float: right;
 }

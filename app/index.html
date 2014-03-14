@@ -15,6 +15,7 @@
     </ul>
   </div>
   <div class="recipe-view" ng-if="recipe">
+    <img ng-if="recipe.photo" ng-src="data/images/{{recipe.photo}}" class="recipe-photo"/>
     <h2>{{name}}</h2>
     <h3>Ingredients</h3>
     <ul>
@@ -22,9 +23,6 @@
     </ul>
     <h3>Instructions</h3>
     <span ng-bind-html="recipe.instructions"></span>
-  </div>
-  <div class="recipe-photo" ng-if="recipe.photo">
-    <img ng-src="data/images/{{recipe.photo}}"/>
   </div>
 </body>
 </html>
